@@ -1,6 +1,7 @@
 /* Mobile Menu */
-
-var port_number = server.listen(process.env.PORT || 3000);
+const express = require('express');
+const app = express();
+const port_number = app.listen(process.env.PORT || 3000);
 app.listen(port_number);
 
 const menu = document.querySelector('#mobile-menu');
