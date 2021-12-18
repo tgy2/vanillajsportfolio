@@ -1,0 +1,23 @@
+{
+  "name": "vanillaport",
+  "description": "Made with HTML, CSS & Vanilla JavaScript.",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tgy2/vanillajsportfolio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tgy2/vanillajsportfolio/issues"
+  },
+  "homepage": "https://github.com/tgy2/vanillajsportfolio#readme"
+}
