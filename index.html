@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Adam Nyholm Taghy</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no"
+    />
+
+    <link
+      href="fonts/mdi/css/materialdesignicons.min.css"
+      media="all"
+      rel="stylesheet"
+    />
+
+    <head>
+      <link rel="shortcut icon" href="./img/browserlogo-removebg-preview.png" />
+    </head>
+
+    <link <link href="style/materialize.min.css" media="all" rel="stylesheet" />
+    <link
+      href="style/padding-margin-helpers.css"
+      media="all"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style/style.css" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/2.1.11/jquery.mixitup.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/jquery.waypoints.min.js"></script>
+
+    <script src="scripts/pt.min.js"></script>
+    <script src="scripts/index.js"></script>
+    <script src="scripts/modal.js"></script>
+    <script src="scripts/materialize.min.js"></script>
+  </head>
+
+  <body>
+    <!-- HOME -->
+    <section class="full-section testingcolor">
+      <div id="pt"></div>
+      <!-- " class="canvas" ^ -->
+
+      <div id="foreground" class="row col s12">
+        <h1 class="home-text">
+          Hello, nice to meet, <span class="home-text-slowly"> I'm </span
+          ><span class="primary-text-color bold home-text-slowly">Adam</span>
+          <br />
+          <div class="home-text-slow">a full-stack web developer.</div>
+        </h1>
+        <a class="view-my-work" href="#about">
+          <button class="big-button">
+            View my work
+            <i class="mdi mdi-arrow-right"></i>
+          </button>
+        </a>
+      </div>
+    </section>
+
+    <!-- ABOUT  -->
+
+    <nav class="navbar">
+      <div class="navbar__container">
+        <div class="navbar_toggle" id="mobile-menu">
+          <div class="bar-toggle btoggleone"></div>
+          <div class="bar-toggle btoggletwo"></div>
+          <div class="bar-toggle btogglethree"></div>
+        </div>
+        <div class="link-wrap">
+          <div class="nav-item" id="home-link">
+            <a class="home-anc" href="#pt">Home</a>
+          </div>
+          <div class="nav-item" id="about-link">
+            <a class="about-anc" href="#about">About</a>
+          </div>
+          <div class="nav-item" id="projects-link">
+            <a class="projects-anc" href="#projects">Portfolio</a>
+          </div>
+          <div class="nav-item" id="footer-link">
+            <a class="footer-anc" href="#footer">Contact</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <section id="about" class="container s12 m6">
+      <div class="row col s12 pt80">
+        <h2 class="about-title">
+          About
+          <br />
+        </h2>
+      </div>
+
+      <!-- Hexagons
+      <div class="row col s12">
+        <div class="globecn-container col s6 m3">
+          <div class="globebox motivation">
+            Staying motivated ?<br />Tap me.
+          </div>
+        </div>
+
+        <div class="globecn-container col s6 m3">
+          <div class="globebox worketh">My work ethic ?<br />Tap me.</div>
+        </div>
+
+        <div class="globecn-container col s6 m3">
+          <div class="globebox innovation">
+            Staying innovative ?<br />Tap me.
+          </div>
+        </div>
+
+        <div class="globecn-container col s6 m3">
+          <div class="globebox interests">My interests ?<br />Tap me.</div>
+        </div>
+      </div> -->
+
+      <!-- Profilepic & text -->
+      <div class="pr40 pl40 pb100 p-pic">
+        <div id="about-me" class="col m6 s12">
+          <img class="profile-pic" src="./img/rsz_picr.png" />
+          <h4>Who am I?</h4>
+          <p>
+            somewhere in my mid twenties I realized that it was time to broaden
+            my spectrum from just sales, customer service and key account
+            management over to software development. hence why I in late 2021
+            attended a coding bootcamp hosted by
+            <a
+              class="tech-link"
+              href="https://www.mmrsolutions.se/"
+              target="_blank"
+              class="primary-text-color"
+              >MMR Solutions</a
+            >.
+          </p>
+          <p>
+            I'm based in Stockholm, Sweden with personal interests towards
+            finance and data analytics and interactive things on the web. <br />
+            <span class="hoveremoji">😃</span>
+          </p>
+        </div>
+      </div>
+
+      <!-- Bars -->
+      <div class="bars-wrapper">
+        <div
+          id="bars-container"
+          class="row col m6 s12 waypoint"
+          data-animation="slide-in-right"
+        >
+          <div class="bar">
+            <div id="html" class="fill">
+              <div class="tag">HTML</div>
+            </div>
+            <span> 90% </span>
+          </div>
+
+          <div class="bar">
+            <div id="css" class="fill">
+              <div class="tag">CSS</div>
+            </div>
+            <span> 90% </span>
+          </div>
+
+          <div class="bar">
+            <div id="javascript" class="fill">
+              <div class="tag">JavaScript</div>
+            </div>
+            <span> 90% </span>
+          </div>
+
+          <div class="bar">
+            <div id="git" class="fill">
+              <div class="tag">Git</div>
+            </div>
+            <span> 80% </span>
+          </div>
+
+          <div class="bar">
+            <div id="react" class="fill">
+              <div class="tag">React</div>
+            </div>
+            <span> 75% </span>
+          </div>
+
+          <div class="bar">
+            <div id="rest-api" class="fill">
+              <div class="tag">REST API</div>
+            </div>
+            <span> 75% </span>
+          </div>
+
+          <div class="bar">
+            <div id="node-js" class="fill">
+              <div class="tag">Node.js</div>
+            </div>
+            <span> 70% </span>
+          </div>
+
+          <div class="bar">
+            <div id="express" class="fill">
+              <div class="tag">Express</div>
+            </div>
+            <span> 65% </span>
+          </div>
+
+          <div class="bar">
+            <div id="redux" class="fill">
+              <div class="tag">Redux</div>
+            </div>
+            <span> 65% </span>
+          </div>
+
+          <div class="bar">
+            <div id="npm" class="fill">
+              <div class="tag">NPM</div>
+            </div>
+            <span> 65% </span>
+          </div>
+
+          <div class="bar">
+            <div id="mongodb" class="fill">
+              <div class="tag">MongoDB</div>
+            </div>
+            <span> 60% </span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS  -->
+    <section id="projects">
+      <div class="row col s12 pt80">
+        <h2 class="projects-title">
+          Projects
+          <br />
+        </h2>
+      </div>
+
+      <div class="projects-selector">
+        <a class="selector" id="btn-all">All</a>
+        <a class="selector" id="btn-react">React-js(mern)</a>
+        <a class="selector" id="btn-node">Node-JS</a>
+        <a class="selector" id="btn-other">Other</a>
+      </div>
+
+      <div class="gallery">
+        <div class="gallery-slider" id="gallery-slider-id">
+          <div class="gallery-slide" id="gallery-slide-all">
+            <div class="hover-helper">
+              <div class="proj-black-text">
+                Webshop <br />
+                React, Redux, Node.js, Express, RESTAPI
+              </div>
+              <div class="proj-bottom-button">
+                <a
+                  class="project_link"
+                  href="https://webshop-adamnt.herokuapp.com/"
+                  target="_blank"
+                  >Visit website</a
+                >
+              </div>
+              <img class="project-image" src="./img/webshop.png" alt="img" />
+            </div>
+            <div class="hover-helper">
+              <div class="proj-white-text">
+                Crypto Currencies <br />
+                React, RestAPI, Axios (npm)
+              </div>
+              <div class="proj-bottom-button">
+                <a
+                  class="project_link"
+                  href="https://top50cryptocoins-adamnt.herokuapp.com/"
+                  target="_blank"
+                  >Visit website</a
+                >
+              </div>
+              <img
+                class="project-image"
+                src="./img/cointracker.png"
+                alt="img"
+              />
+            </div>
+
+            <div class="hover-helper">
+              <div class="proj-black-text">
+                Klarna Checkout <br />
+                Node.js, Express, handlebars, RestAPI
+              </div>
+              <div class="proj-bottom-button">
+                <a
+                  class="project_link"
+                  href="https://klarna-checkout-adamnt.herokuapp.com/checkout/AAA-123"
+                  target="_blank"
+                  >Visit website</a
+                >
+              </div>
+              <img
+                class="project-image"
+                src="./img/klarnacheckout.png"
+                alt="img"
+              />
+            </div>
+            <div class="hover-helper">
+              <div class="proj-white-text">
+                API Calls <br />
+                MongoDB, Node.js, Express, mongoose(npm)
+              </div>
+              <div class="proj-bottom-button">
+                <a
+                  class="project_link"
+                  href="https://github.com/tgy2/API-calls-w-MongoDB"
+                  target="_blank"
+                  >Visit Github</a
+                >
+              </div>
+              <img class="project-image" src="./img/mongodb.png" alt="img" />
+            </div>
+          </div>
+          <div class="gallery-slide" id="gallery-slide-react">
+            <div class="hover-helper">
+              <div class="proj-black-text">
+                Webshop <br />
+                React, Redux, Node.js, Express, RESTAPI
+              </div>
+              <div class="proj-bottom-button">
+                <a
+                  class="project_link"
+                  href="https://webshop-adamnt.herokuapp.com/"
+                  target="_blank"
+                  >Visit website</a
+                >
+              </div>
+              <img class="project-image" src="./img/webshop.png" alt="img" />
+            </div>
+            <div class="hover-helper">
+              <div class="proj-white-text">
+                Crypto Currencies <br />
+                React, RestAPI, Axios (npm)
+              </div>
+              <div class="proj-bottom-button">
+                <a
+                  class="project_link"
+                  href="https://top50cryptocoins-adamnt.herokuapp.com/"
+                  target="_blank"
+                  >Visit website</a
+                >
+              </div>
+              <img
+                class="project-image"
+                src="./img/cointracker.png"
+                alt="img"
+              />
+            </div>
+          </div>
+          <div class="gallery-slide" id="gallery-slide-node">
+            <div class="hover-helper">
+              <div class="proj-black-text">
+                Klarna Checkout <br />
+                Node.js, Express, handlebars, RestAPI
+              </div>
+              <div class="proj-bottom-button">
+                <a
+                  class="project_link"
+                  href="https://klarna-checkout-adamnt.herokuapp.com/checkout/AAA-123"
+                  target="_blank"
+                  >Visit website</a
+                >
+              </div>
+              <img
+                class="project-image"
+                src="./img/klarnacheckout.png"
+                alt="img"
+              />
+            </div>
+          </div>
+          <div class="gallery-slide" id="gallery-slide-other">
+            <div class="hover-helper">
+              <div class="proj-white-text">
+                API Calls <br />
+                MongoDB, Node.js, Express, mongoose(npm)
+              </div>
+              <div class="proj-bottom-button">
+                <a
+                  class="project_link"
+                  href="https://github.com/tgy2/API-calls-w-MongoDB"
+                  target="_blank"
+                  >Visit Github</a
+                >
+              </div>
+              <img class="project-image" src="./img/mongodb.png" alt="img" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER  -->
+    <section id="footer">
+      <div class="row col s12 pt80">
+        <h2 class="footer-title">
+          Contact
+          <br />
+        </h2>
+      </div>
+
+      <p class="footer-text">Have a question or want to get together?</p>
+      <p><span class="footer-text">Email me at: adamtaghy@gmail.com </span></p>
+
+      <div id="links" class="col m12 s12">
+        <a href="mailto:adamtaghy@gmail.com" class="primary-text-color"
+          >Email Me</a
+        >
+        <a
+          href="https://docs.google.com/document/d/1Un8z03a7HwU9Un9ilWeMPSJt5AypLcMXOu3dfu2mAgw/"
+          target="_blank"
+          class="primary-text-color"
+          >View CV</a
+        >
+      </div>
+
+      <div class="bottom-footer">
+        <div class="arrows">
+          <a class="arrow-to-top" href="#pt"
+            ><i class="mdi mdi-arrow-up"></i
+          ></a>
+        </div>
+        <div class="link-container">
+          <a class="link-box-in" href="https://google.com" target="_blank"
+            ><i class="mdi mdi-linkedin"></i
+          ></a>
+          <a class="link-box-git" href="https://google.com" target="_blank"
+            ><i class="mdi mdi-github-circle"></i
+          ></a>
+        </div>
+        <p class="footer-name">
+          Adam Nyholm Taghy
+          <span class="primary-text-color">©2021</span>
+        </p>
+      </div>
+    </section>
+    <script src="index.js"></script>
+
+    <script src="index.js"></script>
+  </body>
+</html>
+
+<script src="scripts/canvas.js"></script>
