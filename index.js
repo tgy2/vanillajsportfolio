@@ -1,6 +1,9 @@
 /* Mobile Menu */
 
-let port = process.env.PORT || 8080;
+const port = process.env.PORT || 8000;
+server.listen(port, () => {
+  console.log('App is running on port ' + port);
+});
 
 const menu = document.querySelector('#mobile-menu');
 const menuLinks = document.querySelector('.link-wrap');
