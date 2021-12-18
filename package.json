@@ -18,6 +18,10 @@
   },
   "homepage": "https://github.com/tgy2/vanillajsportfolio#readme",
   "dependencies": {
+    "dotenv": "^10.0.0",
+    "express": "^4.17.2",
+    "http": "^0.0.1-security",
+    "https": "^1.0.0",
     "node": "^17.2.0",
     "nodemon": "^2.0.15"
   }
