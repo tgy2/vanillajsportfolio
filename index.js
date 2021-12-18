@@ -1,4 +1,7 @@
 /* Mobile Menu */
+
+let port = process.env.PORT || 8080;
+
 const menu = document.querySelector('#mobile-menu');
 const menuLinks = document.querySelector('.link-wrap');
 const hambgOne = document.querySelector('.btoggleone');
