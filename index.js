@@ -1,3 +1,7 @@
+$(document).ready(function () {
+  $(this).scrollTop(0);
+});
+
 var randomness = 50;
 var threshold = 35;
 var anim_duration = 600; //1000 = 1s
