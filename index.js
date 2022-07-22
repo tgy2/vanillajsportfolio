@@ -1,4 +1,78 @@
-/* Mobile Menu */
+var randomness = 50;
+var threshold = 35;
+var anim_duration = 600; //1000 = 1s
+
+animate = function () {
+  $('.fluid').animate(
+    {
+      borderTopLeftRadius: String(
+        Math.round(Math.random() * randomness + threshold) + 'px'
+      ),
+      borderTopRightRadius: String(
+        Math.round(Math.random() * randomness + threshold) + 'px'
+      ),
+      borderBottomLeftRadius: String(
+        Math.round(Math.random() * randomness + threshold) + 'px'
+      ),
+      borderBottomRightRadius: String(
+        Math.round(Math.random() * randomness + threshold) + 'px'
+      ),
+    },
+    anim_duration,
+    animate
+  );
+};
+animate();
+
+$('.home-anc').click(function (event) {
+  window.location.href = '#pt';
+  history.pushState('', document.title, window.location.pathname);
+});
+
+$('.about-anc').click(function (event) {
+  window.location.href = '#about';
+  history.pushState('', document.title, window.location.pathname);
+});
+
+$('.projects-anc').click(function (event) {
+  window.location.href = '#projects';
+  history.pushState('', document.title, window.location.pathname);
+});
+
+$('.footer-anc').click(function (event) {
+  window.location.href = '#footer';
+  history.pushState('', document.title, window.location.pathname);
+});
+
+$('.view-my-work').click(function (event) {
+  window.location.href = '#about';
+  history.pushState('', document.title, window.location.pathname);
+});
+
+$('.arrow-to-top').click(function (event) {
+  window.location.href = '#pt';
+  history.pushState('', document.title, window.location.pathname);
+});
+
+var app = document.getElementById('typewriter');
+
+var typewriter = new Typewriter(app, {
+  loop: true,
+});
+
+typewriter
+  .typeString('a solutions engineer')
+  .pauseFor(1000)
+  .deleteAll()
+  .typeString('a technical project manager')
+  .pauseFor(2000)
+  .deleteAll()
+  .typeString('a web developer')
+  .pauseFor(2000)
+  .deleteAll()
+  .typeString('a technical account manager')
+  .pauseFor(2000)
+  .start();
 
 const menu = document.querySelector('#mobile-menu');
 const menuLinks = document.querySelector('.link-wrap');
@@ -63,7 +137,7 @@ const highlightMenu = () => {
     home.classList.remove('highlight');
     projects.classList.remove('highlight');
     return;
-  } else if (window.innerWidth > 960 && scrollPos < 2750) {
+  } else if (window.innerWidth > 960 && scrollPos < 2500) {
     projects.classList.add('highlight');
     about.classList.remove('highlight');
     footer.classList.remove('highlight');
@@ -207,46 +281,3 @@ interests.addEventListener('click', () => {
     interests.innerHTML = 'My interests ?  Tap me.';
   }
 });
-
-// const express = require('express');
-// const path = require('path');
-// const dotenv = require('dotenv');
-// const livereload = require('livereload');
-// const connectLivereload = require('connect-livereload');
-
-// const app = express();
-// const router = express.Router();
-
-// app.use(connectLivereload());
-
-// // Allow clients to reach the following folder contents:
-// app.use('/style', express.static(__dirname + '/style'));
-// app.use('/img', express.static(__dirname + '/img'));
-// app.use('/fonts', express.static(__dirname + '/fonts'));
-// app.use('/scripts', express.static(__dirname + '/scripts'));
-// app.use('/cv', express.static(__dirname + '/cv'));
-// dotenv.config(express.static(__dirname + '../.env'));
-
-// const liveReloadServer = livereload.createServer();
-// liveReloadServer.watch(path.join(__dirname, '/style'));
-// liveReloadServer.watch(path.join(__dirname, '/img'));
-// liveReloadServer.watch(path.join(__dirname, '/fonts'));
-// liveReloadServer.watch(path.join(__dirname, '/scripts'));
-// liveReloadServer.watch(path.join(__dirname, '/cv'));
-
-// router.get('/', function (req, res) {
-//   res.sendFile(path.join(__dirname + '/index.html'));
-// });
-
-// //add the router
-// app.use('/', router);
-// const PORT = process.env.PORT || 3000;
-// const HOST = process.env.HOST || '0.0.0.0';
-// app.listen(PORT, HOST, function () {
-//   console.log(`App listening on port ${HOST}:${PORT}`);
-//   liveReloadServer.server.once('connection', () => {
-//     setTimeout(() => {
-//       liveReloadServer.refresh('/');
-//     }, 100);
-//   });
-// });

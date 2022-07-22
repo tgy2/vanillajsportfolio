@@ -30,11 +30,21 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/2.1.11/jquery.mixitup.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/jquery.waypoints.min.js"></script>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+
 
     <script src="scripts/index.js"></script>
   </head>
 
   <body>
+  
+  
+
+      <div class="animated fadeIn fluid" style="position: absolute; top: 50%; right: 30%"></div>
+      <div class="animated fadeIn fluid" style="position: absolute; top: 30%; left: 20%"></div>
+      <div class="animated fadeIn fluid" style="position: absolute; top: 60%; left: 40%"></div>
+     
+    
     <!-- HOME -->
     <section class="full-section testingcolor">
       <div id="pt"></div>
@@ -42,14 +52,14 @@
 
       <div id="foreground" class="row col s12">
         <h1 class="home-text">
-          Hello, nice to meet, <span class="home-text-slowly"> I'm </span
+          hello, nice to meet, <span class="home-text-slowly"> I'm </span
           ><span class="primary-text-color bold home-text-slowly">Adam</span>
           <br />
-          <div class="home-text-slow">a full-stack web developer.</div>
+          <div class="home-text-slow" id="typewriter">a solutions engineer</div>
         </h1>
-        <a class="view-my-work" href="#about">
+        <a class="view-my-work" href="javascript://">
           <button class="big-button">
-            View my work
+            Explore
             <i class="mdi mdi-arrow-right"></i>
           </button>
         </a>
@@ -67,16 +77,16 @@
         </div>
         <div class="link-wrap">
           <div class="nav-item" id="home-link">
-            <a class="home-anc" href="#pt">Home</a>
+            <a class="home-anc" href="javascript://">Home</a>
           </div>
           <div class="nav-item" id="about-link">
-            <a class="about-anc" href="#about">About</a>
+            <a class="about-anc" href="javascript://">About</a>
           </div>
           <div class="nav-item" id="projects-link">
-            <a class="projects-anc" href="#projects">Portfolio</a>
+            <a class="projects-anc" href="javascript://">Projects</a>
           </div>
           <div class="nav-item" id="footer-link">
-            <a class="footer-anc" href="#footer">Contact</a>
+            <a class="footer-anc" href="javascript://">Contact</a>
           </div>
         </div>
       </div>
@@ -113,120 +123,76 @@
       </div> -->
 
       <!-- Profilepic & text -->
-      <div class="pr40 pl40 pb100 p-pic">
+      <div class="pb100 p-pic">
+       
+
+        
         <div id="about-me" class="col m6 s12">
-          <img class="profile-pic" src="./img/rsz_picr.png" />
-          <h4>Who am I?</h4>
+          <div class="animated fadeIn fluid" style="position: absolute; top: 10%; right: 1%"></div>
+          <div class="animated fadeIn fluid" style="position: absolute; top: 30%; left: 20%"></div>
+          <div class="animated fadeIn fluid" style="position: absolute; top: 70%; left: 15%"></div>
+         
+          <img class="profile-pic" src="./img/myp.jpg" style="width: 300px; height: 300px; border-radius: 50%; margin-bottom: 40px;"/>
+          <h4>Hi, I'm Adam</h4>
           <p>
-            somewhere in my mid twenties I realized that it was time to broaden
-            my spectrum from just sales, customer service and key account
-            management over to software development. hence why I in late 2021
-            attended a coding bootcamp hosted by
-            <a
-              class="tech-link"
-              href="https://www.mmrsolutions.se/"
-              target="_blank"
-              class="primary-text-color"
-              >MMR Solutions</a
-            >.
+            experienced with software sales
+            <div class="worklist">
+              <ul class="tester123">
+                <li>- Technical discovery</li>
+                <li>- Product demos</li>
+                <li>- RFPS / RFIS</li>
+                <li>- Handling product gaps</li>
+        </ul>
+        <ul class="tester123">
+          <li>- Solution selling</li>
+          <li>- Running PoCs</li>
+          <li>- Integration</li>
+          <li>- Technical project management</li>
+        
+        </ul>
+
+            </div>
+        
+        
           </p>
           <p>
             I'm based in Stockholm, Sweden with personal interests towards
-            finance and data analytics and interactive things on the web. <br />
-            <span class="hoveremoji">😃</span>
+            finance and data analytics and the SaaS space.
           </p>
         </div>
       </div>
 
       <!-- Bars -->
       <div class="bars-wrapper">
-        <div
-          id="bars-container"
-          class="row col m6 s12 waypoint"
-          data-animation="slide-in-right"
-        >
-          <div class="bar">
-            <div id="html" class="fill">
-              <div class="tag">HTML</div>
-            </div>
-            <span> 90% </span>
-          </div>
+        <h4 style="margin-bottom: 40px">techstack</h4>
 
-          <div class="bar">
-            <div id="css" class="fill">
-              <div class="tag">CSS</div>
-            </div>
-            <span> 90% </span>
-          </div>
+        <div class="worklist">
+          <ul class="tester123">
+            <li>- html/css</li>
+            <li>- javascript</li>
+            <li>- git</li>
+            <li>- react</li>
+    </ul>
+    <ul class="tester123">
 
-          <div class="bar">
-            <div id="javascript" class="fill">
-              <div class="tag">JavaScript</div>
-            </div>
-            <span> 90% </span>
-          </div>
+      <li>- APIs</li>
+      <li>- node.js</li>
+      <li>- express</li>
+      <li>- mongodb</li>
+    
+    </ul>
 
-          <div class="bar">
-            <div id="git" class="fill">
-              <div class="tag">Git</div>
-            </div>
-            <span> 80% </span>
-          </div>
-
-          <div class="bar">
-            <div id="react" class="fill">
-              <div class="tag">React</div>
-            </div>
-            <span> 75% </span>
-          </div>
-
-          <div class="bar">
-            <div id="rest-api" class="fill">
-              <div class="tag">REST API</div>
-            </div>
-            <span> 75% </span>
-          </div>
-
-          <div class="bar">
-            <div id="node-js" class="fill">
-              <div class="tag">Node.js</div>
-            </div>
-            <span> 70% </span>
-          </div>
-
-          <div class="bar">
-            <div id="express" class="fill">
-              <div class="tag">Express</div>
-            </div>
-            <span> 65% </span>
-          </div>
-
-          <div class="bar">
-            <div id="redux" class="fill">
-              <div class="tag">Redux</div>
-            </div>
-            <span> 65% </span>
-          </div>
-
-          <div class="bar">
-            <div id="npm" class="fill">
-              <div class="tag">NPM</div>
-            </div>
-            <span> 65% </span>
-          </div>
-
-          <div class="bar">
-            <div id="mongodb" class="fill">
-              <div class="tag">MongoDB</div>
-            </div>
-            <span> 60% </span>
-          </div>
         </div>
+        <div class="animated fadeIn fluid"></div>
+        
+     
       </div>
     </section>
 
     <!-- PROJECTS  -->
     <section id="projects">
+      <div class="animated fadeIn fluid" style="position: absolute; top: 10%; right: 10%"></div>
+      <div class="animated fadeIn fluid" style="position: absolute; bottom: 10%; left: 10%"></div>
       <div class="row col s12 pt80">
         <h2 class="projects-title">
           Projects
@@ -394,6 +360,9 @@
 
     <!-- FOOTER  -->
     <section id="footer">
+      <div class="animated fadeIn fluid" style="position: absolute; top: 15%; right: 10%"></div>
+      <div class="animated fadeIn fluid" style="position: absolute; bottom: 15%; left: 10%"></div>
+
       <div class="row col s12 pt80">
         <h2 class="footer-title">
           Contact
@@ -418,7 +387,7 @@
 
       <div class="bottom-footer">
         <div class="arrows">
-          <a class="arrow-to-top" href="#pt"
+          <a class="arrow-to-top" href="javascript://"
             ><i class="mdi mdi-arrow-up"></i
           ></a>
         </div>
