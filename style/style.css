@@ -1011,11 +1011,6 @@ body {
   padding: 13px;
 }
 
-.bottom-footer {
-  background: var(--gray);
-  height: 200px;
-}
-
 .arrows {
   background-color: var(--gray-dark);
   width: 50px;
