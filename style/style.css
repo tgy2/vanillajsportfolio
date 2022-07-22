@@ -459,12 +459,15 @@ body {
   position: relative;
 }
 
+.about-title {
+  opacity: 0;
+}
+
 .profile-pic {
   max-width: 100% !important;
 }
 
 #about h2 {
-  text-transform: uppercase;
   color: var(--white);
 }
 
@@ -599,6 +602,10 @@ body {
   color: #000;
 }
 
+.bars-wrapper {
+  opacity: 0;
+}
+
 #bars-container:not(.animated) .bar .fill {
   width: 50px;
 }
@@ -649,6 +656,10 @@ body {
 
 #git {
   width: 80%;
+}
+
+#about-me {
+  opacity: 0;
 }
 
 #about-me h4 {
@@ -724,6 +735,10 @@ body {
   background-color: rgb(207, 232, 220);
 } */
 
+.projects-title {
+  opacity: 0;
+}
+
 .slide-projects {
   animation-delay: 3s;
   animation: slideInLeft ease 3s;
@@ -738,6 +753,7 @@ body {
   grid-gap: 20px;
   grid-auto-rows: 1fr;
   padding: 12px;
+  opacity: 0;
 }
 
 .selector {
@@ -786,6 +802,7 @@ body {
   grid-template-rows: auto; */
   transform: translateX(0%);
   transition: transform 1s, height 1s;
+  opacity: 0;
 }
 
 .gallery-slide {
@@ -954,6 +971,10 @@ body {
   background-color: #fff;
 }
 
+.footer-wrapper {
+  opacity: 0;
+}
+
 .slide-footer {
   animation-delay: 3s;
   animation: slideInLeft ease 3s;
@@ -1057,3 +1078,13 @@ body {
 
 /* 
 color: #812b10;; */
+
+.fadeFromLeft {
+  animation: slideInLeft 1s;
+  opacity: 1 !important;
+}
+
+.fadeFromBottom {
+  animation: slideUp 1s;
+  opacity: 1 !important;
+}

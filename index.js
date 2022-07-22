@@ -115,6 +115,50 @@ foooterAnc.addEventListener('click', ancRemover);
 
 /* SCroll pos */
 
+const triggerKeyFrames = () => {
+  const aboutTitle = document.querySelector('.about-title');
+  const aboutMe = document.querySelector('.about-me');
+  const techStack = document.querySelector('.bars-wrapper');
+  const projectsTitle = document.querySelector('.projects-title');
+  const projectsSelector = document.querySelector('.projects-selector');
+  const projectsGalary = document.querySelector('.gallery-slider');
+  const footerWrapper = document.querySelector('.footer-wrapper');
+
+  let scrollPos = window.scrollY;
+  // console.log(scrollPos);
+
+  if (scrollPos > 280 && scrollPos < 300) {
+    console.log(scrollPos);
+    aboutTitle.classList.add('fadeFromLeft');
+
+    return;
+  } else if (scrollPos > 300 && scrollPos < 1000) {
+    aboutMe.classList.add('fadeFromLeft');
+
+    return;
+  } else if (scrollPos > 1150 && scrollPos < 1350) {
+    techStack.classList.add('fadeFromLeft');
+
+    return;
+  } else if (scrollPos > 1420 && scrollPos < 1500) {
+    projectsTitle.classList.add('fadeFromLeft');
+
+    return;
+  } else if (scrollPos > 1510 && scrollPos < 1600) {
+    projectsSelector.classList.add('fadeFromLeft');
+    projectsGalary.classList.add('fadeFromLeft');
+
+    return;
+  } else if (scrollPos > 2500 && scrollPos < 2900) {
+    footerWrapper.classList.add('fadeFromLeft');
+
+    return;
+  }
+};
+
+window.addEventListener('scroll', triggerKeyFrames);
+window.addEventListener('click', triggerKeyFrames);
+
 const highlightMenu = () => {
   const elem = document.querySelector('.highlight');
   const home = document.querySelector('#home-link');
@@ -123,14 +167,21 @@ const highlightMenu = () => {
   const footer = document.querySelector('#footer-link');
 
   const aboutTitle = document.querySelector('.about-title');
+  const aboutMe = document.querySelector('#about-me');
+  const techStack = document.querySelector('.bars-wrapper');
   const projectsTitle = document.querySelector('.projects-title');
+  const projectsSelector = document.querySelector('.projects-selector');
+  const projectsGalary = document.querySelector('.gallary');
+  const entireFooter = document.querySelector('#footer');
   const footerTitle = document.querySelector('.footer-title');
+
   let scrollPos = window.scrollY;
   //console.log(scrollPos)
 
   if (window.innerWidth > 960 && scrollPos < 560) {
     home.classList.add('highlight');
     about.classList.remove('highlight');
+
     return;
   } else if (window.innerWidth > 960 && scrollPos < 1900) {
     about.classList.add('highlight');
