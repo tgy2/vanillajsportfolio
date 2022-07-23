@@ -2,7 +2,7 @@ $(document).ready(function () {
   $(this).scrollTop(0);
 });
 
-var randomness = 50;
+var randomnesss = 50;
 var threshold = 35;
 var anim_duration = 600; //1000 = 1s
 
@@ -10,16 +10,16 @@ animate = function () {
   $('.fluid').animate(
     {
       borderTopLeftRadius: String(
-        Math.round(Math.random() * randomness + threshold) + 'px'
+        Math.round(Math.random() * randomnesss + threshold) + 'px'
       ),
       borderTopRightRadius: String(
-        Math.round(Math.random() * randomness + threshold) + 'px'
+        Math.round(Math.random() * randomnesss + threshold) + 'px'
       ),
       borderBottomLeftRadius: String(
-        Math.round(Math.random() * randomness + threshold) + 'px'
+        Math.round(Math.random() * randomnesss + threshold) + 'px'
       ),
       borderBottomRightRadius: String(
-        Math.round(Math.random() * randomness + threshold) + 'px'
+        Math.round(Math.random() * randomnesss + threshold) + 'px'
       ),
     },
     anim_duration,
@@ -27,6 +27,28 @@ animate = function () {
   );
 };
 animate();
+
+animateMobile = function () {
+  $('.fluids').animate(
+    {
+      borderTopLeftRadius: String(
+        Math.round(Math.random() * randomnesss + threshold) + 'px'
+      ),
+      borderTopRightRadius: String(
+        Math.round(Math.random() * randomnesss + threshold) + 'px'
+      ),
+      borderBottomLeftRadius: String(
+        Math.round(Math.random() * randomnesss + threshold) + 'px'
+      ),
+      borderBottomRightRadius: String(
+        Math.round(Math.random() * randomnesss + threshold) + 'px'
+      ),
+    },
+    anim_duration,
+    animate
+  );
+};
+animateMobile();
 
 $('.home-anc').click(function (event) {
   window.location.href = '#pt';
