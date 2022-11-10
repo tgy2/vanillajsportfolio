@@ -153,7 +153,7 @@ const triggerKeyFrames = () => {
   let scrollPos = window.scrollY;
   // console.log(scrollPos);
 
-  if (scrollPos > 280 && scrollPos < 300) {
+  if (scrollPos > 280 && scrollPos < 450) {
     console.log(scrollPos);
     aboutTitle.classList.add('animate__jackInTheBox');
 
