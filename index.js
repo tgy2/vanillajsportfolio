@@ -155,28 +155,28 @@ const triggerKeyFrames = () => {
 
   if (scrollPos > 280 && scrollPos < 300) {
     console.log(scrollPos);
-    aboutTitle.classList.add('fadeFromLeft');
+    aboutTitle.classList.add('animate__jackInTheBox');
 
     return;
   } else if (scrollPos > 300 && scrollPos < 1000) {
-    aboutMe.classList.add('fadeFromLeft');
+    aboutMe.classList.add('animate__jackInTheBox');
 
     return;
   } else if (scrollPos > 1150 && scrollPos < 1350) {
-    techStack.classList.add('fadeFromLeft');
+    techStack.classList.add('animate__rotateInDownLeft');
 
     return;
   } else if (scrollPos > 1420 && scrollPos < 1500) {
-    projectsTitle.classList.add('fadeFromLeft');
+    projectsTitle.classList.add('animate__rotateInDownRight');
 
     return;
   } else if (scrollPos > 1510 && scrollPos < 1600) {
-    projectsSelector.classList.add('fadeFromLeft');
-    projectsGalary.classList.add('fadeFromLeft');
+    projectsSelector.classList.add('animate__rotateIn');
+    projectsGalary.classList.add('animate__rotateIn');
 
     return;
   } else if (scrollPos > 2500 && scrollPos < 2900) {
-    footerWrapper.classList.add('fadeFromLeft');
+    footerWrapper.classList.add('animate__jackInTheBox');
 
     return;
   }

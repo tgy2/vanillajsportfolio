@@ -12,6 +12,7 @@
   --secondary-light: #02b9ec;
   --secondary-dark: #02b0e0;
   --dark: #252934; */
+  --animate-duration: 3s;
 }
 
 @font-face {
