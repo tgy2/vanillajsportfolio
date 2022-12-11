@@ -353,16 +353,23 @@ body {
   border-bottom: 4px solid var(--white);
 }
 
+nav {
+  box-shadow: none;
+}
+
 .navbar {
-  background: var(--gray);
-  border-bottom: 2px solid var(--gray);
+  background: #1f2225;
   font-size: 16px;
   text-transform: uppercase;
   display: flex;
   justify-content: left;
   position: sticky;
   top: 0;
-  z-index: 9999;
+  z-index: 99;
+}
+
+.navbarHide {
+  display: none;
 }
 
 .navbar__container {
@@ -395,6 +402,7 @@ body {
 
 @media screen and (max-width: 960px) {
   .navbar__container {
+    background-color: #1f2225;
     display: flex;
     justify-content: space-between;
     height: 80px;
