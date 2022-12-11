@@ -154,7 +154,7 @@ const triggerKeyFrames = () => {
   let scrollPos = window.scrollY;
   // console.log(scrollPos);
 
-  if (scrollPos > 280 && scrollPos < 450) {
+  if (scrollPos > 280 && scrollPos < 300) {
     console.log(scrollPos);
     aboutTitle.classList.add('animate__jackInTheBox');
 
@@ -173,12 +173,12 @@ const triggerKeyFrames = () => {
 
     return;
   } else if (scrollPos > 1420 && scrollPos < 1500) {
-    projectsTitle.classList.add('animate__rotateInDownRight');
+    projectsTitle.classList.add('fadeFromLeft');
 
     return;
   } else if (scrollPos > 1510 && scrollPos < 1600) {
-    projectsSelector.classList.add('animate__rotateIn');
-    projectsGalary.classList.add('animate__rotateIn');
+    projectsSelector.classList.add('fadeFromLeft');
+    projectsGalary.classList.add('fadeFromLeft');
 
     return;
   } else if (scrollPos > 2500 && scrollPos < 2900) {
