@@ -374,3 +374,4 @@ btnOther.addEventListener('click', () => {
 //     interests.innerHTML = 'My interests ?  Tap me.';
 //   }
 // });
+//
